@@ -1,0 +1,10 @@
+<library path="lib/libflobotics_finger_rviz_force_limits">
+    <class name="Flobotics/flobotics_finger_rviz_force_limits"
+           type="flobotics_finger_force_limits_panel::FloboticsFingerForceLimitsPanel"
+           base_class_type="rviz::Panel">
+        <description>
+            Force limits panel for Flobotics finger
+        </description>
+    </class>
+    
+</library>
