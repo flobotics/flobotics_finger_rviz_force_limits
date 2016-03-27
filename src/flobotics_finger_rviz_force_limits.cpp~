@@ -480,20 +480,9 @@ namespace flobotics_finger_force_limits_panel {
     msg.proximal_1_limit_hold_1 = proximal_1_limit_hold_1->text().toInt();
     msg.proximal_1_limit_max_1 = proximal_1_limit_max_1->text().toInt();
 
-	if( (proximal_1_limit_min_2->text().toInt() + val) > 0)
-	    msg.proximal_1_limit_min_2 = proximal_1_limit_min_2->text().toInt() + val;
-	else
-		msg.proximal_1_limit_min_2 = 0;
-
-	if( (proximal_1_limit_hold_2->text().toInt() + val) > 0)
-	    msg.proximal_1_limit_hold_2 = proximal_1_limit_hold_2->text().toInt() + val;
-	else
-		msg.proximal_1_limit_hold_2 = 0;
-
-	if( (proximal_1_limit_max_2->text().toInt() + val) > 0)
-	    msg.proximal_1_limit_max_2 = proximal_1_limit_max_2->text().toInt() + val;
-	else
-		msg.proximal_1_limit_max_2 = 0;
+    msg.proximal_1_limit_min_2 = proximal_1_limit_min_2->text().toInt() + val;
+    msg.proximal_1_limit_hold_2 = proximal_1_limit_hold_2->text().toInt() + val;
+    msg.proximal_1_limit_max_2 = proximal_1_limit_max_2->text().toInt() + val;
 
     msg.intermediate_limit_min_1 = intermediate_limit_min_1->text().toInt();
     msg.intermediate_limit_hold_1 = intermediate_limit_hold_1->text().toInt();
@@ -535,20 +524,9 @@ namespace flobotics_finger_force_limits_panel {
     msg.proximal_1_limit_hold_2 = proximal_1_limit_hold_2->text().toInt();
     msg.proximal_1_limit_max_2 = proximal_1_limit_max_2->text().toInt();
 
-	if( (intermediate_limit_min_1->text().toInt() + val) > 0)
-	    msg.intermediate_limit_min_1 = intermediate_limit_min_1->text().toInt() + val;
-	else
-		msg.intermediate_limit_min_1 = 0;
-	
-	if( (intermediate_limit_hold_1->text().toInt() + val) > 0)
-	    msg.intermediate_limit_hold_1 = intermediate_limit_hold_1->text().toInt() + val;
-	else
-		msg.intermediate_limit_hold_1 = 0;
-
-	if( (intermediate_limit_max_1->text().toInt() + val) > 0)	
-	    msg.intermediate_limit_max_1 = intermediate_limit_max_1->text().toInt() + val;
-	else
-		msg.intermediate_limit_max_1 = 0;
+    msg.intermediate_limit_min_1 = intermediate_limit_min_1->text().toInt() + val;
+    msg.intermediate_limit_hold_1 = intermediate_limit_hold_1->text().toInt() + val;
+    msg.intermediate_limit_max_1 = intermediate_limit_max_1->text().toInt() + val;
 
     msg.intermediate_limit_min_2 = intermediate_limit_min_2->text().toInt();
     msg.intermediate_limit_hold_2 = intermediate_limit_hold_2->text().toInt();
@@ -590,20 +568,9 @@ namespace flobotics_finger_force_limits_panel {
     msg.intermediate_limit_hold_1 = intermediate_limit_hold_1->text().toInt();
     msg.intermediate_limit_max_1 = intermediate_limit_max_1->text().toInt();
 
-	if( (intermediate_limit_min_2->text().toInt() + val) > 0)
-	    msg.intermediate_limit_min_2 = intermediate_limit_min_2->text().toInt() + val;
-	else
-		msg.intermediate_limit_min_2 = 0;
-
-	if( (intermediate_limit_hold_2->text().toInt() + val) > 0)
-	    msg.intermediate_limit_hold_2 = intermediate_limit_hold_2->text().toInt() + val;
-	else	
-		msg.intermediate_limit_hold_2 = 0;
-
-	if( (intermediate_limit_max_2->text().toInt() + val) > 0)
-	    msg.intermediate_limit_max_2 = intermediate_limit_max_2->text().toInt() + val;
-	else
-		msg.intermediate_limit_max_2 = 0;
+    msg.intermediate_limit_min_2 = intermediate_limit_min_2->text().toInt() + val;
+    msg.intermediate_limit_hold_2 = intermediate_limit_hold_2->text().toInt() + val;
+    msg.intermediate_limit_max_2 = intermediate_limit_max_2->text().toInt() + val;
 
     msg.distal_limit_min_1 = distal_limit_min_1->text().toInt();
     msg.distal_limit_hold_1 = distal_limit_hold_1->text().toInt();
@@ -645,20 +612,9 @@ namespace flobotics_finger_force_limits_panel {
     msg.intermediate_limit_hold_2 = intermediate_limit_hold_2->text().toInt();
     msg.intermediate_limit_max_2 = intermediate_limit_max_2->text().toInt();
 
-	if( (distal_limit_min_1->text().toInt() + val) > 0)
-	    msg.distal_limit_min_1 = distal_limit_min_1->text().toInt() + val;
-	else
-		msg.distal_limit_min_1 = 0;
-
-	if( (distal_limit_hold_1->text().toInt() + val) > 0)
-	    msg.distal_limit_hold_1 = distal_limit_hold_1->text().toInt() + val;
-	else
-		msg.distal_limit_hold_1 = 0;
-
-	if( (distal_limit_max_1->text().toInt() + val) > 0)
-	    msg.distal_limit_max_1 = distal_limit_max_1->text().toInt() + val;
-	else
-		msg.distal_limit_max_1 = 0;
+    msg.distal_limit_min_1 = distal_limit_min_1->text().toInt() + val;
+    msg.distal_limit_hold_1 = distal_limit_hold_1->text().toInt() + val;
+    msg.distal_limit_max_1 = distal_limit_max_1->text().toInt() + val;
 
     msg.distal_limit_min_2 = distal_limit_min_2->text().toInt();
     msg.distal_limit_hold_2 = distal_limit_hold_2->text().toInt();
@@ -700,20 +656,9 @@ namespace flobotics_finger_force_limits_panel {
     msg.distal_limit_hold_1 = distal_limit_hold_1->text().toInt();
     msg.distal_limit_max_1 = distal_limit_max_1->text().toInt();
 
-	if( (distal_limit_min_2->text().toInt() + val) > 0)
-	    msg.distal_limit_min_2 = distal_limit_min_2->text().toInt() + val;
-	else
-		msg.distal_limit_min_2 = 0;
-
-	if( (distal_limit_hold_2->text().toInt() + val) > 0)
-	    msg.distal_limit_hold_2 = distal_limit_hold_2->text().toInt() + val;
-	else
-		msg.distal_limit_hold_2 = 0;
-
-	if( (distal_limit_max_2->text().toInt() + val) > 0)
-	    msg.distal_limit_max_2 = distal_limit_max_2->text().toInt() + val;
-	else
-		msg.distal_limit_max_2 = 0;
+    msg.distal_limit_min_2 = distal_limit_min_2->text().toInt() + val;
+    msg.distal_limit_hold_2 = distal_limit_hold_2->text().toInt() + val;
+    msg.distal_limit_max_2 = distal_limit_max_2->text().toInt() + val;
 
     setLimits_publisher_.publish(msg);
 
