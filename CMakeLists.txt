@@ -7,6 +7,7 @@ project(flobotics_finger_rviz_force_limits)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rviz
+  flobotics_finger_messages
 )
 
 ## System dependencies are found with CMake's conventions
@@ -66,10 +67,10 @@ include(${QT_USE_FILE})
 # )
 
 ## Generate added messages and services with any dependencies listed here
- #generate_messages(
+# generate_messages(
  #  DEPENDENCIES
 #	flobotics_finger_messages
- #)
+# )
 
 ###################################
 ## catkin specific configuration ##
@@ -95,7 +96,7 @@ include(${QT_USE_FILE})
 ## Your package locations should be listed before other locations
 # include_directories(include)
 include_directories(
-  include/flobotics_finger_rviz_force_limits/
+  include/flobotics_finger_rviz_force_limits/ ${catkin_INCLUDE_DIRS}
 )
 
 qt4_wrap_cpp(MOC_FILES
@@ -114,7 +115,9 @@ qt4_wrap_cpp(MOC_FILES
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
-# add_dependencies(flobotics_finger_rviz_force_limits_node flobotics_finger_rviz_force_limits_generate_messages_cpp)
+add_dependencies(flobotics_finger_rviz_force_limits flobotics_finger_messages_generate_messages_cpp ${catkin_EXPORTED_TARGETS} )
+
+#add_dependencies(flobotics_finger_msgs flobotics_finger_messages_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
  target_link_libraries(flobotics_finger_rviz_force_limits
